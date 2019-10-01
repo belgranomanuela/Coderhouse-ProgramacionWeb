@@ -12,7 +12,7 @@
 //   console.log('Tu nombre no es Juan');
 // }
 
-// var resultOfGame = 'Perdió';
+// var resultOfGame = 'asd';
 // switch (resultOfGame) {
 //   case 'Ganó':
 //     console.log('Suma 3 puntos');
@@ -50,7 +50,7 @@
 
 ////Operadores de comparación
 ////Estrictamente igual
-// var firstName = 'Juan';
+// var firstName = 'Mauro';
 // console.log(firstName === 'Juan'); //true
 
 // var number = 1234;
