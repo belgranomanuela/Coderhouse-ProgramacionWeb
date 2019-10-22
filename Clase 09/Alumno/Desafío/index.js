@@ -7,7 +7,7 @@ function showMessage(event){
   
   var input =  event.target
 
-  if (input.value.indexOf('@') >= 0 ||
+  if (input.value.indexOf('@') >= 0 &&
       input.value.indexOf('.') >= 0
       ) {
     
