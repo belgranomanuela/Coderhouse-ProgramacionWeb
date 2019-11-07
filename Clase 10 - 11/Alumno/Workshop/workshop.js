@@ -1,4 +1,30 @@
-var listaAlumnos = [];
+var listaAlumnos = JSON.parse (localStorage.getItem('Alumno'));
+for (let index = 0; index < listaAlumnos.length; index++) {
+  const alumno = listaAlumnos[index];
+
+  var bodyTable = document.getElementById('bodyTable')
+  var tr = document.createElement('tr');
+  tr.id = alumno.dni;
+
+  var tdNombre = document.createElement('td');
+  tdNombre.innerHTML = alumno.nombre;
+  tr.appendChild(tdNombre);
+
+  var tdApellido = document.createElement('td');
+  tdApellido.innerHTML = alumno.apellido;
+  tr.appendChild(tdApellido);
+
+  var tdDni = document.createElement('td');
+  tdDni.innerHTML = alumno.dni;
+  tr.appendChild(tdDni);
+
+  var tdEmail = document.createElement('td');
+  tdEmail.innerHTML = alumno.email ;
+  tr.appendChild(tdEmail);
+
+  bodyTable.appendChild(tr);
+
+}
 
 var nombre = document.getElementById('nombre')
 

@@ -10,13 +10,15 @@ email.blur(function validarEmail (event) {
       input.val().length > 0
       ) {input.removeClass('is-invalid')
          input.addClass ('is-valid'); 
-    console.log('Es un formato correcto')   
+
+    //console.log('Es un formato correcto')   
   }
 
   else{
     
     input.addClass ('is-invalid');
-    console.log('Es un formato incorrecto')
+    
+  //console.log('Es un formato incorrecto')
   }
   
 })
