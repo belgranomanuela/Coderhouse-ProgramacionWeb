@@ -197,13 +197,14 @@ function eliminarAlumno(event) {
 
    for (let i = 0; i < listaAlumnos.length; i++) {
      var eliminarAlumno = listaAlumnos[i];
-    if (alumno.nombre === dniAEliminar.value) {
+    if (eliminarAlumno.dni === dniAEliminar.value) {
       posicionAEliminar = i;
 
     }
    }
 
    listaAlumnos.splice(posicionAEliminar,1)
+
    localStorage.setItem('Alumno', JSON.stringify(listaAlumnos));
     console.log(listaAlumnos)
 
@@ -213,7 +214,7 @@ function eliminarAlumno(event) {
   
 
   function buscarAlumno (event) {
-
+    
     for (let i = 0; i < listaAlumnos.length; i++) {
       var alumno = listaAlumnos[i];
      if (alumno.nombre === buscarNombreAlumno.value) {
