@@ -1,4 +1,9 @@
 var listaAlumnos = JSON.parse (localStorage.getItem('Alumno'));
+
+if (listaAlumnos === null) {
+  listaAlumnos = [];
+ }
+
 for (let index = 0; index < listaAlumnos.length; index++) {
   const alumno = listaAlumnos[index];
 
@@ -185,7 +190,7 @@ function validarEmail(event){
 
 function eliminarAlumno(event) {
   var eliminarAlumno = document.getElementById(dniAEliminar.value);
-  console.log(eliminarAlumno)
+
   eliminarAlumno.parentNode.removeChild(eliminarAlumno);
 
  var posicionAEliminar;
@@ -201,6 +206,8 @@ function eliminarAlumno(event) {
    listaAlumnos.splice(posicionAEliminar,1)
    localStorage.setItem('Alumno', JSON.stringify(listaAlumnos));
     console.log(listaAlumnos)
+
+    
   }
 
   
