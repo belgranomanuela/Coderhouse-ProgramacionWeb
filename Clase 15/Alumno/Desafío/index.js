@@ -27,22 +27,25 @@
   })
 
   request.done(function( data ) {
-  console.log( 'Respuesta: ',data )
+    console.log( 'Respuesta: ',data )
+  
   var datos = data.results
-  for (let i = 0; i < datos.length; i++) {
-  const personaje = datos[i];
+    for (let i = 0; i < datos.length; i++) {
+    const personaje = datos[i];
 
   tbody.append("<tr><td></td><td>" + personaje.name + "</td><td>" + personaje.height + "</td><td>" + personaje.mass + "</td><td>" + personaje.gender + "</td><td><button>Eliminar</button></td></tr>")
+  
   var tr2 = tbody.children()
-  tr2.attr("style", "overflow: hidden;")
+    tr2.attr("style", "overflow: hidden;")
+  
   var btn = $("button")
-
-  btn.attr("type", "button")
-  btn.attr("class","btn btn-danger")
+    btn.attr("type", "button")
+    btn.attr("class","btn btn-danger")
 
   btn.click(function() {
-  boton = $(this)
-  var td = boton.parent()
+    boton = $(this)
+  
+    var td = boton.parent()
   var tr = td.parent()
   tr.fadeOut(700, function() {
 
