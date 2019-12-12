@@ -18,3 +18,13 @@ body {
   background-position: 50% 25%;
   background-size: cover;
 }
+
+.navbar {
+
+  font-family: Starwars;
+}
+
+.navbar-nav {
+  display: flex;
+  text-align: right !important;
+}
