@@ -7,7 +7,7 @@
 #root {
   margin-top: 50px;
   font-family: 'Starwars';
-  color: white;
+  color: grey;
   letter-spacing: 2px;
 }
 
@@ -20,11 +20,19 @@ body {
 }
 
 .navbar {
-
   font-family: Starwars;
+  font-size: 35px;
 }
 
 .navbar-nav {
   display: flex;
   text-align: right !important;
+}
+
+.navbar-brand {
+  font-size: 35px !important;
+}
+
+.btn {
+  opacity: 0.8;
 }
